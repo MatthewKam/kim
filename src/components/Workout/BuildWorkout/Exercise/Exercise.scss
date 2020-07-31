@@ -1,0 +1,47 @@
+.Exercise{
+  padding:5px 10px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-top: 1px solid rgba(255,255,255, 0.4);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  margin: 5px;
+
+
+  &-wrap{
+    padding: 5px;
+    padding-right: 0;
+    font-size: .95em;
+    border-radius: 3px;
+    width: 100%;
+  }
+  &-body{
+    border-radius: 3px;
+    padding-bottom:5px;
+    &.level-1{
+      border-bottom: 1px solid rgba(255,255,255,.5);
+    }
+    &.level-2{
+      border-bottom: 3px solid rgba(255,255,255,.5);
+    }
+    &.level-3{
+      border-bottom: 5px solid rgba(255,255,255,.5);
+    }
+    &.level-4{
+      border-bottom: 7px solid rgba(255,255,255,.5);
+    }
+    &.level-5{
+      border-bottom: 10px solid rgba(255,255,255,.5);
+    }
+  }
+  &-settings{
+    button{
+      padding: 0;
+      min-width: unset;
+    }
+  }
+}
+
+
+

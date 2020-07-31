@@ -1,0 +1,74 @@
+.Button.bubble{
+  text-align: center;
+
+  a,
+  div, 
+  button{
+    font-family: 'Montserrat', sans-serif;
+    background-color: transparent;
+    border: none;
+    line-height: 50px;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    display: inline-block;
+    margin: 10px;
+    padding: 0;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    cursor:pointer;
+    position: relative;
+
+    span{
+      display: block;
+      padding: 0 20px;
+      border-radius: 5px;
+      box-shadow: -2px -2px 8px rgba(255, 255, 255, 0.2);
+    }
+
+    &:hover{
+      box-shadow:inset 3px 3px 5px rgba(0, 0, 0, 0.3);
+      span{
+        box-shadow:inset -2px -2px 8px rgba(255, 255, 255, 0.2);
+      }
+
+      &:before{
+        transform: scale(0.95);
+        box-shadow: 
+          -3px -3px 5px rgba(0, 0, 0, 0.2), 
+          1px 1px 10px rgba(255, 255, 255, 0.2);
+        border-radius: 5px;
+
+      }
+    }
+    &:active,
+    &:focus{
+      outline:none;
+    }
+    &:active{
+      transform:scale(.97);
+    }
+
+    &:after,
+    &:before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+    }
+  }//End of buttons
+ 
+}
+
+
+.Material-Group {
+  display:flex;
+  justify-content:space-evenly;
+  margin:20px 0;
+  .Material-Button{
+    
+  }
+}

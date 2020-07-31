@@ -1,0 +1,22 @@
+$box-shadow-common: 2px 2px 10px rgba(0,0,0,.2);
+.Goals, .QuickStats, .OverallStats {
+  max-width: 500px;
+}
+
+.Goals{
+  background-color: rgba(102, 43, 156, 0.2);
+  box-shadow: $box-shadow-common;
+
+  .add-edit-goals {
+    margin-top: 15px;
+  }
+}
+.Stats{
+  background-color: rgba(0, 0, 0, 0.15);
+  box-shadow: $box-shadow-common;
+}
+.QuickStats{
+  margin:30px 0;
+  background-color: rgba(114, 207, 222, 0.2);
+  box-shadow: $box-shadow-common;
+}

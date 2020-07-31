@@ -1,0 +1,36 @@
+.WorkoutTracker{
+  .sctn{
+    &-container{
+      padding: 15px;
+      border-radius: 3px;
+      margin:10px 0;
+
+      &-x{
+        padding:15px 0;
+      }
+    }
+    &-title{
+      text-align: center;
+      border-bottom: 1px solid #b9b9b9;
+      padding-bottom: 10px;
+      margin-bottom: 15px;
+      width:100%;
+      
+      &-workouts{
+        text-align: center;
+        font-style: italic;
+        font-weight: 500;
+        margin-bottom: 10px;
+
+        &:after{
+          content: '';
+          border-bottom: 1px solid #dadada;
+          width: 90%;
+          display: block;
+          margin: 0 auto;
+          margin-top: 10px; 
+        }
+      }
+    }
+  }
+}

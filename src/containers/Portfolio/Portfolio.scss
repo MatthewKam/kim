@@ -1,0 +1,14 @@
+.Portfolio{
+  background: rgb(193,192,212);
+  background: linear-gradient(45deg, rgba(193,192,212,1) 0%, rgba(128,128,180,1) 35%, rgba(64,64,152,1) 100%);
+  width: 100vw;
+  height: 100%;
+  padding:3vh;
+  
+  @media only screen and (max-width: 950px) {
+    padding:2vh;
+  }
+  @media only screen and (max-width: 900px) {
+    padding:0;
+  }
+}

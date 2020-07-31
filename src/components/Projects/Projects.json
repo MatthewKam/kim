@@ -1,0 +1,67 @@
+{
+  "projects": [
+    {
+      "name": "Aloha Drapery",
+      "builtWith": ["HTML, SCSS, JQUERY, Liquid"],
+      "description": "Custom Drapery company from Hawaii. They wanted an online store that sold already sized drapery as well as custom made draperies",
+      "photo-mobile": "./alohadrapery-mobile.png",
+      "photo-desktop": "./alohadrapery-desktop.png"
+    },
+    {
+      "name": "Bulletproof Coffee",
+      "builtWith": ["HTML, SCSS, JQUERY, PHP"],
+      "description": "Helped sell other lines of products and created custom sales funnels",
+      "photo-mobile": "./bulletproof-mobile.png",
+      "photo-desktop": "./bulletproof-desktop.png"
+    },
+    {
+      "name": "Good Gummy",
+      "builtWith": ["HTML, SCSS, JQUERY, Liquid"],
+      "description": "Helped create custom sales pages and flows to help increase advertiser ROI",
+      "photo-mobile": "./goodgummy-mobile.png",
+      "photo-desktop": "./goodgummy-desktop.png"
+    },
+    {
+      "name": "Moscow Copper",
+      "builtWith": ["HTML, SCSS, JQUERY, PHP"],
+      "description": "The original Moscow copper cup for Moscow Mules wanted to gain more of an online presence",
+      "photo-mobile": "./moscowmule-mobile.png",
+      "photo-desktop": "./moscowmule-desktop.png"
+    },
+    {
+      "name": "Night Shift Goods",
+      "builtWith": ["HTML, SCSS, JQUERY, Liquid"],
+      "description": "A company that made beddings with attitude",
+      "photo-mobile": "./nightshiftgoods-mobile.png",
+      "photo-desktop": "./nightshiftgoods-desktop.png"
+    },
+    {
+      "name": "Rastaclat",
+      "builtWith": ["HTML, SCSS, JQUERY, Liquid"],
+      "description": "A company that made bracelets out of shoe string. We helped build out marketing campaigns for them to increase daily sales",
+      "photo-mobile": "./rastaclat-mobile.png",
+      "photo-desktop": "./rastaclat-desktop.png"
+    },
+    {
+      "name": "Sen Beauty",
+      "builtWith": ["HTML, SCSS, JQUERY, Liquid"],
+      "description": "An organic beauty company",
+      "photo-mobile": "./senbeauty-mobile.png",
+      "photo-desktop": "./senbeauty-desktop.png"
+    },
+    {
+      "name": "Stealth Tactical Flashlights",
+      "builtWith": ["HTML, SCSS, JQUERY, PHP"],
+      "description": "A small company that sold high powered LED flashlights that were durable and came with a bottle opener and glass shatterer",
+      "photo-mobile": "./stealthtactical-mobile.png",
+      "photo-desktop": "./stealthtactical-desktop.png"
+    },
+    {
+      "name": "The Beard Club",
+      "builtWith": ["HTML, SCSS, JQUERY, PHP"],
+      "description": "A company made for people with beards or people that wanted beards.",
+      "photo-mobile": "./thebeardclub-mobile.png",
+      "photo-desktop": "./thebeardclub-desktop.png"
+    }
+  ]
+}

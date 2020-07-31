@@ -1,0 +1,36 @@
+.Workout{
+  &-Queue{
+    .Workout-header{
+      background-color: rgba(122, 151, 255, 0.8);
+    }
+    .Exercise{
+      background-color: rgba(122, 151, 255, 0.6);
+    }
+
+    .Workout{
+      &-Finished{
+        padding:0 5px;
+        .Workout {
+          opacity: .5;
+
+          &:hover{
+            opacity:1;
+          }
+        }
+      }
+      &-Current{
+
+      }
+      &-Next{
+        padding:0 5px;
+        .Workout {
+          opacity: .8;
+
+          &:hover{
+            opacity:1;
+          }
+        }
+      }
+    }
+  }
+}

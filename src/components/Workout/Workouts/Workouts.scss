@@ -1,0 +1,206 @@
+//universal
+$font-basic:'Montserrat', sans-serif;
+$green-pastel:rgba(144, 238, 144, 1);
+$green-pastel-2:rgba(144, 238, 144, .8);
+$salmon: rgba(255, 160, 122, 1);
+$salmon-2:rgba(255, 160, 122, .8);
+$lavender: rgba(176, 188, 222, 1);
+$lavender-2: rgba(176, 188, 222, 0.8);
+
+
+.mSide-10{
+  margin:0 10px;
+}
+.grow-1{flex-grow:1;}
+.grow-2{flex-grow:2;}
+.grow-3{flex-grow:3;}
+.grow-4{flex-grow:4;}
+
+
+.Workout{
+  padding: 3px 0;
+  &-body{
+    display:none;
+  }
+  &-header{
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    padding-right: 5px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &-settings {
+    .material-icons{
+      cursor: pointer;
+      padding: 2px 0px;
+      border-radius: 2px;
+      &:hover,
+      &:active,
+      &:focus{
+        background-color: rgba(0,0,0,.1);
+      }
+    }
+    .expand-workout{
+      margin-top: 15px;
+    }
+    .menu-items{
+      button{
+        padding: 0;
+        min-width: unset;
+      }
+    }
+  }
+
+  &-Buttons{
+    display: block;
+  }
+} 
+
+.Add{
+  &-Workout{
+    form{
+      padding-top: 10px;
+    }
+    label#standard-required-label.Mui-focused{
+      color: rgba(0, 0, 0, 0.75);
+    }
+    .font-basic{
+      color: rgba(0, 0, 0, 0.54);
+      font-weight: 400;
+      font-family:$font-basic;
+    }
+
+    .resistance-weight{
+      display: flex;
+      .weight-amount{
+        margin-right:20px;
+      }
+      .weight-unit:before {
+        border-bottom: 0;
+      }
+      &.wrap{
+        margin-bottom: 0;
+        margin-top: 10px;
+      }
+    }
+
+    .add-another{
+      margin: 10px;
+      button{
+        border: 2px dashed lightgrey;
+        color: #a09f9f;
+        padding: 10px 0;
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+      }
+    }
+    .Field{
+      &-Wraps{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: rgba(0, 0, 0, 0.1);
+        border-radius: 3px;
+        padding: 10px 15px;
+        margin-bottom: 5px;
+    
+        p{
+          color: rgba(0, 0, 0, 0.54);
+        }
+        label,
+        input,
+        select, div,ul, li, span{
+          font-family:$font-basic;
+        }
+        &.flex-direction-row{
+          flex-direction: row;
+        }
+      }
+    }
+
+    .Exercise{
+      padding-right:5px;
+      &-wrap{
+        display:flex;
+        align-items:center;
+      }
+    }
+  }
+
+  
+  &-Time{
+    padding:0 2px;
+    h4{
+      color: rgba(0, 0, 0, 0.54);
+      font-weight:400;
+      margin-top: 10px;
+    }
+    .units{
+      &-wrap{
+        display: flex;
+        justify-content: space-evenly;
+        .time-label {
+          color: rgba(0,0,0,.6);
+          font-size: .9em;
+          font-family:$font-basic;
+        }
+      }
+      &-type{
+        flex-direction: column;
+        span{
+          &.MuiSlider-root{
+            padding-bottom: 5px;
+          }
+        }
+      }
+      &-hours{
+        flex-grow:1;
+      }
+      &-minutes{
+        margin: 0 30px;
+      }
+      &-minutes,
+      &-seconds{
+        flex-grow:3;
+      }
+    }
+  }
+
+  &-Exercise{
+    padding: 15px;
+    background-color: rgba(0,0,0,.1);
+    border-radius: 3px;
+    margin: 10px;
+  }
+
+}
+
+
+
+.MyWorkouts{
+  .Workout-header{
+    background-color: $green-pastel;
+  }
+  .Exercise{
+    background-color: $green-pastel-2;
+  }
+}
+.SuggestedWorkouts{
+  .Workout-header{
+    background-color: $salmon;
+  }
+  .Exercise{
+    background-color: $salmon-2;
+  }
+}
+.SavedWorkouts{
+  .Workout-header{
+    background-color: $lavender;
+  }
+  .Exercise{
+    background-color: $lavender-2;
+  }
+}

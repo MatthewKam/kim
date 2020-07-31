@@ -1,0 +1,20 @@
+.Scroll,
+.Cursor{
+  position: fixed;
+  right: 0;
+  z-index: 11;
+  width: 50%;
+  text-align: right;
+  margin-right: 10px;
+  line-height: 33px;
+}
+.Scroll{
+  top: 35px;
+  line-height: 33px;
+}
+.Cursor{
+  top: 0;
+  line-height:32px;
+}
+
+        

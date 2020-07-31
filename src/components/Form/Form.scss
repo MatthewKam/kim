@@ -1,0 +1,37 @@
+$bg-color:#aec0d0;
+.FormWrapper{
+  background-color:$bg-color;
+  h1{
+    &.form-section-title{
+      text-align: center;
+      font-size: 48px;
+      margin-bottom: 30px;
+      padding-top: 50px;
+      text-decoration: underline;
+    }
+  }
+}
+.Form{
+
+  h1{
+    text-align:center;
+  }
+  .buttons,
+  .input-radio,
+  .input-checkbox,
+  .input-switch-toggle
+  {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+    h1{
+      flex: 0 0 100%;
+    }
+  }
+  .input-fields{
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}

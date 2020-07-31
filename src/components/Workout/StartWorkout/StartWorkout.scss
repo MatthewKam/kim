@@ -1,0 +1,38 @@
+.Start-Workout{
+  .Workout{
+    &-header{
+      background-color: rgba(228, 125, 85, 0.5);
+    }
+    &-body{
+      display:block;
+    }
+  }
+  .Exercise{
+    background-color: rgba(228, 125, 85, 0.3);
+    .progress {
+      height: 10px;
+      border-radius: 3px;
+      background-color: rgba(0,0,0,.1);
+
+      &:after{
+        content: '';
+        height: 100%;
+        width:0;
+        background-color: #4cd24c;
+        display: block;
+        border-radius: 3px;
+      }
+      
+      &.finished{
+        &:after{
+          width:100%;
+        }
+      }
+      &.active{
+        &:after{
+          width:25%;
+        }
+      }
+    }
+  }
+}

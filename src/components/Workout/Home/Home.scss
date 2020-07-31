@@ -1,0 +1,93 @@
+.Home {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.Home-ATF{
+  // background-color:lavender;
+
+  .Initial-Screen{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    h1, h2, h3, h4{
+      
+    }
+    h1{
+      font-size: 6em;
+      line-height: .9em;
+    }
+    h2{
+      font-weight: 300;
+      text-transform: uppercase;
+      font-size: 1.8em;
+      border-bottom:1px solid lightgrey;
+      padding-bottom: 15px;
+      width: 300px;
+      margin: 0 auto;
+    }
+    h3{
+      font-size: 1em;
+      font-weight: 100; 
+      margin-top: 20px;
+    }
+    h4{
+      font-weight: 100;
+      font-style: italic;
+      font-size: .9em;
+      margin-top: 10px;
+      margin-bottom: 30px;
+      padding: 0 10px;
+    }
+    button{
+      margin-bottom: 30px;
+    }
+    p{
+      margin-bottom: 10px;
+      font-size: .9em;
+      line-height: 1.7em;
+    }
+  }
+}
+.Reminder{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .reminder{
+    &-text,
+    &-toggle,
+    &-set{
+      align-items: center;
+      justify-content: center;
+    }
+    &-text{
+      flex-grow: 1;
+      font-size:14px;
+    }
+    &-toggle{
+      flex-grow: 2;
+      margin-top: 5px;
+      .MuiGrid-spacing-xs-1{
+        margin:0;
+      }
+      .MuiGrid-root.MuiGrid-item {
+        &.grid-left,
+        &.grid-mid,
+        &.grid-right{
+          padding: 4px 0;
+        }
+        &.grid-left{
+          padding-left:4px;
+        }
+        &.grid-right{
+          padding-right:4px;
+        }
+      }
+    }
+    &-set{
+      flex-grow: 1;
+      text-align: right;
+    }
+  }
+}

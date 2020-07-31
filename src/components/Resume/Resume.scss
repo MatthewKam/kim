@@ -1,0 +1,320 @@
+$heading-color:#8080b4;
+
+
+.Resume{
+  font-family: 'Montserrat';
+  background-color: white;
+  margin: 0 auto;
+  padding: 30px;
+  box-sizing: border-box;
+  box-shadow: 0px 5px 10px rgba(0,0,0,.5);
+  border-radius: 3px;
+  text-align:center;
+  max-width: 1100px;
+  position: relative;
+
+  @media only screen and (max-width: 900px) {
+    box-shadow: 0;
+  }
+
+  .print {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    img{
+      width: 30px;
+    }
+  }
+
+  .profile{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+    @media only screen and (max-width: 700px) {
+      display: block;
+    }
+
+    &-pic{
+      max-width: 250px;
+      border-radius: 50%;
+      border: 7px solid white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      flex: 1;
+      img{
+        width: 100%;
+        border-radius: 50%;
+        display: block;
+        box-shadow: 1px 1px 5px rgba(0,0,0,.5);
+      }
+
+      @media only screen and (max-width: 700px) {
+        max-width: 150px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+      }
+    }
+    &-info{
+      flex: 1;
+      padding: 0 30px;
+      h1{
+        font-size: 65px;
+        color:$heading-color;
+        @media only screen and (max-width: 950px) {
+          font-size: 55px;
+        }
+        @media only screen and (max-width: 500px) {
+          font-size: 40px;
+        }
+      }
+      h3{
+        line-height: 30px;
+
+        @media only screen and (max-width: 950px) {
+          line-height: 20px;
+          margin-bottom: 10px;
+        }
+      }
+      p{
+        margin-bottom: 10px;
+        font-size: 15px;
+        @media only screen and (max-width: 950px) {
+          font-size: 14px;
+        }
+      }
+
+      a{
+        display: inline-block;
+        margin: 0 3px;
+        img{
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          opacity: .7;
+          filter: grayscale(75%);
+          &:hover{
+            filter: none;
+            transform:scale(1.05);
+            opacity: 1;
+          }
+        }
+      }
+
+    }
+
+
+    
+  } //End of Profile 
+
+  .experience{
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: left;
+    @media only screen and (max-width: 900px) {
+      display: block;
+    }
+
+    p{
+      font-size: 14px;
+      line-height: 22px;
+
+      @media only screen and (max-width: 950px) {
+        font-size: 13px;
+        line-height: 20px;
+      }
+    }
+
+    .job{
+      flex: 2 1 0;
+
+      &-wrap {
+        margin-bottom: 15px;
+        h2{
+          font-size: 20px;
+          
+        }
+        h3{
+          color:$heading-color;
+          font-size: 18px;
+          font-style: italic;
+          span{
+            color:black;
+            font-weight: 400;
+            font-size: 15px;
+          }
+        }
+        
+      }
+      &-title{
+        margin-bottom: 5px;
+      }
+      &-info{
+        a{
+          text-decoration: none;
+          color: green;
+        }
+      }
+
+    }
+    .side-notes{
+      flex: 1 1 0;
+      padding-right: 3vw;
+      h1{
+        margin-bottom: 10px;
+        font-size: 20px;
+        font-weight: 600;
+      }
+
+      .school{
+        margin-top:15px;
+
+        h2{
+          font-size: 16px;
+          font-weight: 400;
+        }
+        h3{
+          color:$heading-color;
+          font-size: 15px;
+          font-weight: 600;
+          font-style:italic;
+        }
+
+        &-wrap{
+          margin-bottom:10px;
+        }
+      }
+
+      .extra{
+        &-info{
+          margin-top:15px;
+        }
+      }
+
+      .links{
+        h2, h3{
+          font-weight: 400;
+        }
+        h2{
+          font-size: 16px;
+        }
+        h3{
+          a{
+            font-size: 15px;
+            margin-bottom: 10px;
+          }
+        }
+      }
+
+    } //end of school
+  } // end of experience
+} // end of Resume
+
+
+
+
+
+
+
+@media print {
+  .Resume{
+    box-shadow: none;
+    
+    .print{
+      display:none;
+    }
+    .profile{
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+  
+      @media only screen and (max-width: 700px) {
+        display: block;
+      }
+  
+      &-pic{
+        max-width: 150px;
+      }
+      &-info{
+        h1{
+          font-size: 36px;
+        }
+        h3{
+          line-height: 20px;
+          margin-bottom: 10px;
+        }
+        p{
+          font-size: 12px;
+          line-height: 16px;
+        }
+        a{
+          display:none;
+          img{
+            width: 20px;
+            height: 20px;
+          }
+        }
+      }
+      
+    } //End of Profile 
+  
+    .experience{
+      p{
+        font-size: 12px;
+        line-height:19px;
+      }
+  
+      .job{
+        flex: 3 1;
+        &-wrap {
+          margin-bottom: 10px;
+          h2{
+            font-size: 18px;
+          }
+          h3{
+            font-size: 16px;
+            span{
+              font-size: 14px;
+            }
+          }
+        }
+       
+      }
+      .side-notes{
+        padding-right:2vw;
+        h1{
+          font-size: 18px;
+          margin-bottom:0;
+        }
+  
+        .school{
+          margin-top:10px;
+  
+          h2{
+            font-size: 14px;
+          }
+          h3{
+            font-size: 13px;
+          }
+        }
+  
+        .extra{
+          &-info{
+            margin-top:10px; 
+          }
+        }
+        .links{
+          h2{
+            font-size: 13px;
+          }
+          h3{
+            a{
+              font-size: 13px;
+            }
+          }
+        }
+      } //end of school
+    } // end of experience
+  } // end of Resume
+  
+}

@@ -1,0 +1,99 @@
+$blue-sky: #15c5fb;
+$orange-red: #f3330f;
+$bg-color:transparent;
+
+.ATF1{
+  font-family: 'Montserrat', sans-serif;
+  background-color: $bg-color;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .main{
+    color:white;
+    z-index: 8;
+  }
+
+  .layer{
+    height: 100%;
+    width: 100%;
+    border: 1px solid white;
+    display: block;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .content{
+      opacity:0;
+    }
+    
+    h1{
+      max-width: 900px;
+      color: white;
+    }
+
+    &--1{
+      .content{
+        opacity:1;
+      }
+
+      h1{
+        z-index: 7;
+      }
+    }
+    &--2{
+      h1{
+        z-index: 6;
+      }
+    }
+    &--3{
+      h1{
+        z-index: 5;
+      }
+    }
+    &--4{
+      h1{
+        z-index: 4;
+      }
+    }
+    &--5{
+      h1{
+        z-index: 3;
+      }
+    }
+    &--6{
+      h1{
+        z-index: 2;
+      }
+    }
+    &--7{
+      display: flex;
+      flex-direction: column;
+
+      h1{
+        z-index: 1;
+      }
+      ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        li{
+          font-size: 24px;
+          padding: 10px;
+          color: white;
+          a{
+            color: white;
+            text-decoration: none;
+            cursor:pointer;
+          }
+        }
+      }
+    }
+  }
+  
+}
